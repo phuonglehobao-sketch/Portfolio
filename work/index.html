@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/assets/T-black-brand-mark.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/assets/T-black-brand-mark.png"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/assets/T-white-brand-mark.png"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work — The Alternate Cloud</title>
+  </head>
+  <body data-initial-page="work">
+    <div
+      class="site-loader"
+      role="status"
+      aria-live="polite"
+    >
+      <div class="site-loader__lockup">
+        <span class="site-loader__brand">THE ALTERNATE CLOUD</span>
+        <span class="site-loader__status">Loading...</span>
+      </div>
+    </div>
+    <div id="app"></div>
+        <nav class="map-navigation" aria-label="Primary navigation">
+          <button
+          class="map-navigation__brand"
+          type ="button"
+          data-page = "home"
+          aria-label = "return to home page"
+          ></button>
+          
+          <button
+          class="map-navigation__side map-navigation__side--left"
+          type ="button"
+          data-page = "about">
+          About
+          </button>
+
+          <button
+            class="map-navigation__side map-navigation__side--right"
+            type="button"
+            data-page = "work">
+            Work
+          </button>
+        </nav>
+
+        <nav
+          class="site-mobile-navigation"
+          aria-label="Mobile navigation"
+        >
+          <button
+            class="site-mobile-navigation__toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="site-mobile-menu"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+
+          <div
+            class="site-mobile-menu"
+            id="site-mobile-menu"
+            aria-hidden="true"
+          >
+            <button type="button" data-page="home">Home</button>
+            <button type="button" data-page="about">About</button>
+            <button type="button" data-page="work">Work</button>
+            <button type="button" data-page="contact">Contact</button>
+          </div>
+        </nav>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
